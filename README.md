@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AiAppLabs
 
-## Getting Started
+Marketing site for AiAppLabs — an AI product studio. Built with **Next.js 16 (App Router + Turbopack)**, **React 19**, **Tailwind CSS v4**, and **Framer Motion**.
 
-First, run the development server:
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # start dev server at http://localhost:3000
+npm run build    # production build
+npm run start    # serve the production build
+npm run lint     # eslint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Concern        | Choice                              |
+| -------------- | ----------------------------------- |
+| Framework      | Next.js 16.2 (App Router, Turbopack)|
+| UI runtime     | React 19                            |
+| Styling        | Tailwind CSS v4 (`@tailwindcss/postcss`) |
+| Animation      | Framer Motion, GSAP                 |
+| Class utility  | `clsx` + `tailwind-merge` (`cn()` in `lib/utils.ts`) |
+| Language       | TypeScript (strict)                 |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Folder structure
 
-## Learn More
+```
+app/                     App Router entry
+  layout.tsx             Root layout, global <Metadata>, JSON-LD, fonts
+  page.tsx               Home page (composes the marketing sections)
+  globals.css            Tailwind v4 entry + theme tokens
+  robots.ts              Generated /robots.txt
+  sitemap.ts             Generated /sitemap.xml (derived from data/navigation)
+  manifest.ts            Generated /manifest.webmanifest (PWA)
+  opengraph-image.tsx    Dynamically generated 1200x630 OG/Twitter image
+  (marketing)/           Route group reserved for standalone marketing pages
 
-To learn more about Next.js, take a look at the following resources:
+components/
+  layout/                Navbar, Footer
+  sections/              Home-page sections (hero, services, pricing, ...)
+  ui/                    Reusable primitives (Button, SectionHeading)
+  animations/            Motion-driven decorative components
+  shared/                Cross-cutting shared components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+config/site.ts           Single source of truth for brand/site metadata
+data/                    Typed content (navigation, services, pricing, ...)
+types/content.ts         Shared content types
+hooks/                   Client hooks (use-scroll)
+lib/utils.ts             Helpers (cn class merger)
+public/                  Static assets
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Path alias `@/*` maps to the project root (see `tsconfig.json`).
 
-## Deploy on Vercel
+## SEO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+SEO is centralized in `config/site.ts` and wired through the App Router metadata APIs:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Metadata** — `metadataBase`, title template, description, keywords, canonical, and robots directives in `app/layout.tsx`.
+- **Open Graph / Twitter** — a branded image is generated at request/build time by `app/opengraph-image.tsx` (`next/og`); Next injects the `og:image`/`twitter:image` tags automatically.
+- **robots.txt** — `app/robots.ts`, links to the sitemap.
+- **sitemap.xml** — `app/sitemap.ts`, derived from `data/navigation` so it stays in sync as pages are added.
+- **manifest.webmanifest** — `app/manifest.ts`.
+- **Structured data** — `Organization` + `WebSite` JSON-LD injected in `app/layout.tsx`.
+
+> Update `config/site.ts` (name, url, description, email, etc.) — every SEO surface reads from it.
+>
+> Note: `sitemap.ts` lists the routes declared in `data/navigation` (`/services`, `/about`, `/portfolio`, `/blog`, `/contact`). Those pages are not built yet; add them under `app/(marketing)/` as the next phase so the sitemap entries resolve.
