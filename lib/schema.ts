@@ -14,6 +14,7 @@ const PORTFOLIO_ID = `${siteConfig.url}/#portfolio`;
 const BREADCRUMB_ID = `${siteConfig.url}/#breadcrumb`;
 const FAQ_ID = `${siteConfig.url}/#faq`;
 const imageUrl = absoluteUrl(siteConfig.ogImage);
+const logoUrl = absoluteUrl(siteConfig.logo);
 const sameAs = Object.values(siteConfig.links).filter((href) => href.length > 0);
 
 export function organizationSchema() {
@@ -29,10 +30,10 @@ export function organizationSchema() {
     ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
     logo: {
       "@type": "ImageObject",
-      url: imageUrl,
-      width: 1200,
-      height: 630,
-      caption: siteConfig.ogImageAlt,
+      url: logoUrl,
+      width: 312,
+      height: 72,
+      caption: siteConfig.logoAlt,
     },
     image: imageUrl,
     ...(sameAs.length > 0 ? { sameAs } : {}),

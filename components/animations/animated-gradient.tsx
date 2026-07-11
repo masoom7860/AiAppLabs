@@ -34,21 +34,21 @@ export function AnimatedGradient({ className, grid = true, glow = true }: Animat
       {glow ? (
         <div
           className="absolute left-1/2 top-1/3 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2"
-          style={blob("rgba(37,99,235,0.18)")}
+          style={blob("rgba(36,104,216,0.18)")}
         />
       ) : null}
 
       <div
         className="absolute -left-32 top-[-15%] h-[36rem] w-[36rem] animate-drift-1 rounded-full will-change-transform"
-        style={blob("rgba(37,99,235,0.34)")}
+        style={blob("rgba(33,183,243,0.32)")}
       />
       <div
         className="absolute right-[-15%] top-1/4 h-[34rem] w-[34rem] animate-drift-2 rounded-full will-change-transform"
-        style={blob("rgba(124,58,237,0.32)")}
+        style={blob("rgba(139,43,226,0.32)")}
       />
       <div
         className="absolute bottom-[-20%] left-1/3 h-[32rem] w-[32rem] animate-drift-3 rounded-full will-change-transform"
-        style={blob("rgba(6,182,212,0.28)")}
+        style={blob("rgba(36,104,216,0.26)")}
       />
     </div>
   );

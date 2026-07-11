@@ -17,7 +17,7 @@ export default function OpengraphImage() {
           justifyContent: "space-between",
           padding: "80px",
           background:
-            "radial-gradient(circle at 0% 0%, rgba(34,211,238,0.25), transparent 45%), linear-gradient(135deg, #020617 0%, #0f172a 55%, #111827 100%)",
+            "radial-gradient(circle at 0% 0%, rgba(33,183,243,0.28), transparent 42%), radial-gradient(circle at 100% 12%, rgba(168,85,247,0.24), transparent 40%), linear-gradient(135deg, #0b1029 0%, #121735 56%, #27164f 100%)",
           color: "#f8fafc",
           fontFamily: "sans-serif",
         }}
@@ -31,14 +31,14 @@ export default function OpengraphImage() {
               width: "72px",
               height: "72px",
               borderRadius: "999px",
-              border: "2px solid rgba(34,211,238,0.4)",
-              background: "rgba(34,211,238,0.1)",
-              color: "#67e8f9",
+              border: "2px solid rgba(33,183,243,0.45)",
+              background: "rgba(33,183,243,0.12)",
+              color: "#60d7ff",
               fontSize: "30px",
               fontWeight: 700,
             }}
           >
-            AL
+            AI
           </div>
           <div style={{ fontSize: "34px", fontWeight: 600 }}>{siteConfig.name}</div>
         </div>
@@ -63,7 +63,7 @@ export default function OpengraphImage() {
               <div
                 key={item}
                 style={{
-                  border: "1px solid rgba(103,232,249,0.35)",
+                  border: "1px solid rgba(96,215,255,0.36)",
                   borderRadius: "999px",
                   padding: "10px 18px",
                   color: "#e0f2fe",
@@ -83,7 +83,7 @@ export default function OpengraphImage() {
             alignItems: "center",
             gap: "16px",
             fontSize: "26px",
-            color: "#67e8f9",
+            color: "#60d7ff",
             fontWeight: 600,
             letterSpacing: "0.08em",
             textTransform: "uppercase",

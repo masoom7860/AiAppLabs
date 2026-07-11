@@ -10,22 +10,22 @@
  * ================================================================== */
 @theme {
   /* ---- Brand palette ---- */
-  --color-primary: #2563eb;
+  --color-primary: #2468d8;
   --color-primary-foreground: #f8fafc;
-  --color-primary-soft: #3b82f6;
-  --color-primary-strong: #1d4ed8;
+  --color-primary-soft: #2bb7f2;
+  --color-primary-strong: #1f4fc4;
 
-  --color-secondary: #7c3aed;
+  --color-secondary: #8b2be2;
   --color-secondary-foreground: #f8fafc;
-  --color-secondary-soft: #8b5cf6;
+  --color-secondary-soft: #a855f7;
   --color-secondary-strong: #6d28d9;
 
-  --color-accent: #06b6d4;
-  --color-accent-foreground: #0f172a;
-  --color-accent-soft: #22d3ee;
-  --color-accent-strong: #0891b2;
+  --color-accent: #21b7f3;
+  --color-accent-foreground: #121735;
+  --color-accent-soft: #60d7ff;
+  --color-accent-strong: #1687c6;
 
-  --color-brand-dark: #0f172a;
+  --color-brand-dark: #121735;
 
   /* Status */
   --color-success: #10b981;
@@ -54,11 +54,11 @@
   --radius-pill: 9999px;
 
   /* ---- Shadows ---- */
-  --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 6px 16px -4px rgba(15, 23, 42, 0.08);
-  --shadow-card: 0 4px 24px -6px rgba(15, 23, 42, 0.12), 0 2px 8px -2px rgba(15, 23, 42, 0.06);
-  --shadow-elevated: 0 16px 48px -12px rgba(15, 23, 42, 0.22);
-  --shadow-glow: 0 0 0 1px rgba(37, 99, 235, 0.18), 0 12px 40px -10px rgba(37, 99, 235, 0.5);
-  --shadow-glow-accent: 0 0 0 1px rgba(6, 182, 212, 0.22), 0 12px 40px -10px rgba(6, 182, 212, 0.5);
+  --shadow-soft: 0 1px 2px rgba(18, 23, 53, 0.04), 0 6px 16px -4px rgba(18, 23, 53, 0.08);
+  --shadow-card: 0 4px 24px -6px rgba(18, 23, 53, 0.12), 0 2px 8px -2px rgba(18, 23, 53, 0.06);
+  --shadow-elevated: 0 16px 48px -12px rgba(18, 23, 53, 0.22);
+  --shadow-glow: 0 0 0 1px rgba(36, 104, 216, 0.2), 0 12px 40px -10px rgba(33, 183, 243, 0.48);
+  --shadow-glow-accent: 0 0 0 1px rgba(139, 43, 226, 0.22), 0 12px 40px -10px rgba(139, 43, 226, 0.5);
 
   /* ---- Reusable animation utilities (animate-*) ---- */
   --animate-spin-slow: spin 1.4s linear infinite;
@@ -98,16 +98,16 @@
   color-scheme: light;
 
   --background: #f8fafc;
-  --foreground: #0f172a;
+  --foreground: #121735;
   --surface: #ffffff;
-  --surface-foreground: #0f172a;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --border: #e2e8f0;
-  --ring: #2563eb;
+  --surface-foreground: #121735;
+  --muted: #eef7fd;
+  --muted-foreground: #5f6a89;
+  --border: #dce7f4;
+  --ring: #2468d8;
 
   --glass-bg: rgba(255, 255, 255, 0.6);
-  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-border: rgba(18, 23, 53, 0.08);
   --glass-highlight: rgba(255, 255, 255, 0.5);
 }
 
@@ -115,16 +115,16 @@
 .dark {
   color-scheme: dark;
 
-  --background: #0f172a;
+  --background: #0b1029;
   --foreground: #f8fafc;
-  --surface: #1e293b;
+  --surface: #121735;
   --surface-foreground: #f8fafc;
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --border: #334155;
-  --ring: #06b6d4;
+  --muted: #171d3d;
+  --muted-foreground: #a6b5d4;
+  --border: #2b335d;
+  --ring: #21b7f3;
 
-  --glass-bg: rgba(15, 23, 42, 0.5);
+  --glass-bg: rgba(18, 23, 53, 0.5);
   --glass-border: rgba(255, 255, 255, 0.12);
   --glass-highlight: rgba(255, 255, 255, 0.06);
 }
@@ -248,7 +248,12 @@
     content: "";
     height: 1px;
     width: 1.75rem;
-    background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+    background: linear-gradient(
+      to right,
+      var(--color-accent),
+      var(--color-primary),
+      var(--color-secondary-soft)
+    );
   }
 
   /* ---- Layout ---- */
@@ -282,7 +287,7 @@
 
   /* ---- Badge (base lives in @utility badge below) ---- */
   .badge-primary {
-    @apply badge bg-primary/10 text-primary;
+    @apply badge border border-accent/25 bg-gradient-to-r from-accent/15 via-primary/10 to-secondary/15 text-accent shadow-soft;
   }
   .badge-secondary {
     @apply badge bg-secondary/10 text-secondary;
@@ -302,7 +307,7 @@
 
   /* ---- Button (base lives in @utility btn below) ---- */
   .btn-primary {
-    @apply btn bg-primary text-primary-foreground shadow-glow hover:-translate-y-0.5 hover:bg-primary-strong;
+    @apply btn bg-gradient-brand text-white shadow-glow hover:-translate-y-0.5 hover:brightness-110;
   }
   .btn-secondary {
     @apply btn bg-secondary text-secondary-foreground hover:-translate-y-0.5 hover:bg-secondary-strong;
@@ -347,8 +352,28 @@
 }
 
 /* ---- Gradients & decorative backgrounds ---- */
+@utility text-brand-ai {
+  background-image: linear-gradient(180deg, #309edb 0%, #2369cd 52%, #1030d8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@utility text-brand-app {
+  color: #080b28;
+}
+@utility text-brand-labs {
+  background-image: linear-gradient(180deg, #9838d0 0%, #7529bc 48%, #5008a8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 @utility text-gradient {
-  background-image: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background-image: linear-gradient(
+    135deg,
+    var(--color-accent) 0%,
+    var(--color-primary) 42%,
+    var(--color-secondary-soft) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -360,13 +385,52 @@
   color: transparent;
 }
 @utility bg-gradient-brand {
-  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background-image: linear-gradient(
+    135deg,
+    var(--color-accent) 0%,
+    var(--color-primary) 48%,
+    var(--color-secondary) 100%
+  );
 }
+.logo-text {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: var(--font-heading);
+  font-feature-settings: "ss01";
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.logo-text > span {
+  display: inline-block;
+}
+
+.logo-text > span:first-child {
+  background-image: linear-gradient(180deg, #309edb 0%, #2369cd 52%, #1030d8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo-text > span:nth-child(2) {
+  color: #080b28;
+}
+
+.logo-text > span:nth-child(3) {
+  background-image: linear-gradient(180deg, #9838d0 0%, #7529bc 48%, #5008a8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 @utility bg-gradient-accent {
   background-image: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
 }
 @utility bg-gradient-dark {
-  background-image: linear-gradient(160deg, #0f172a 0%, #1e293b 55%, #0f172a 100%);
+  background-image: linear-gradient(160deg, #0b1029 0%, #121735 54%, #27164f 100%);
 }
 @utility bg-gradient-subtle {
   background-image: linear-gradient(

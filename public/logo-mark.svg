@@ -1,0 +1,19 @@
+<svg width="312" height="72" viewBox="0 0 312 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AiAppLabs logo</title>
+  <desc id="desc">AiAppLabs wordmark using cyan blue, deep navy, and purple brand colors.</desc>
+  <text x="4" y="52" fill="url(#aiGradient)" font-family="Inter, Sora, Arial, sans-serif" font-size="58" font-weight="800">Ai</text>
+  <text x="76" y="52" fill="#080B28" font-family="Inter, Sora, Arial, sans-serif" font-size="58" font-weight="800">App</text>
+  <text x="184" y="52" fill="url(#labsGradient)" font-family="Inter, Sora, Arial, sans-serif" font-size="58" font-weight="800">Labs</text>
+  <defs>
+    <linearGradient id="aiGradient" x1="4" y1="9" x2="66" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#309EDB"/>
+      <stop offset="0.52" stop-color="#2369CD"/>
+      <stop offset="1" stop-color="#1030D8"/>
+    </linearGradient>
+    <linearGradient id="labsGradient" x1="184" y1="9" x2="308" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9838D0"/>
+      <stop offset="0.48" stop-color="#7529BC"/>
+      <stop offset="1" stop-color="#5008A8"/>
+    </linearGradient>
+  </defs>
+</svg>

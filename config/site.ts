@@ -42,6 +42,9 @@ export const siteConfig = {
   description:
     "AiAppLabs builds Laravel/PHP platforms, Shopify apps, JavaScript frontends, Node.js backends, cloud deployments, AI dashboards, chat, and stock alerts.",
   url: resolveSiteUrl(),
+  logo: "/logo.svg",
+  logoMark: "/logo-mark.svg",
+  logoAlt: "AiAppLabs logo",
   ogImage: "/opengraph-image",
   ogImageAlt:
     "AiAppLabs Laravel, Shopify, cloud, and AI implementation services preview",

@@ -11,12 +11,13 @@ import { cn, isActivePath } from "@/lib/utils";
 import { NavDropdown } from "@/components/layout/nav-dropdown";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { ScrollProgress } from "@/components/layout/scroll-progress";
+import { Logo } from "@/components/shared/logo";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { CloseIcon, MenuIcon } from "@/components/shared/icons";
 
 export type NavbarProps = {
   items?: NavItem[];
-  logo?: { label: string; href?: string; mark?: string };
+  logo?: { label: string; href?: string };
   cta?: { label: string; href: string };
   className?: string;
 };
@@ -28,7 +29,7 @@ export type NavbarProps = {
  */
 export function Navbar({
   items = navigation,
-  logo = { label: siteConfig.name, href: "/", mark: "AL" },
+  logo = { label: siteConfig.name, href: "/" },
   cta = { label: "Book a call", href: "#contact" },
   className,
 }: NavbarProps) {
@@ -51,17 +52,20 @@ export function Navbar({
     >
       <div className="container-page flex h-16 items-center justify-between gap-4">
         {/* Logo */}
-        <Link
-          href={logo.href ?? "/"}
-          onClick={() => setOpen(false)}
-          className="flex items-center gap-3 rounded-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-        >
-          <span className="flex h-10 w-10 items-center justify-center rounded-pill bg-gradient-brand text-sm font-bold text-white shadow-glow">
-            {logo.mark ?? logo.label.slice(0, 2).toUpperCase()}
-          </span>
-          <span className="text-base font-semibold text-foreground">{logo.label}</span>
-        </Link>
-
+        <div className="flex items-center rounded-pill bg-white/95 pr-4 shadow-soft ring-1 ring-border/60">
+          <Link
+            href={logo.href ?? "/"}
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-3 rounded-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            <Logo type="logo" imageClassName="h-10 sm:h-11" />
+            <span className="logo-text" aria-hidden="true">
+              <span>Ai</span>
+              <span>App</span>
+              <span>Labs</span>
+            </span>
+          </Link>
+        </div>
         {/* Desktop nav */}
         <nav className="hidden items-center gap-7 md:flex">
           {items.map((item) => {

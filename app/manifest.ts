@@ -12,10 +12,15 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: siteConfig.language,
     display: "standalone",
     orientation: "portrait",
-    background_color: "#020617",
-    theme_color: "#020617",
+    background_color: "#0b1029",
+    theme_color: "#0b1029",
     categories: ["business", "productivity", "technology"],
     icons: [
+      {
+        src: siteConfig.logoMark,
+        sizes: "any",
+        type: "image/svg+xml",
+      },
       {
         src: "/favicon.ico",
         sizes: "any",

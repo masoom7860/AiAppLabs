@@ -109,7 +109,7 @@ export function HeroSection({
             className="absolute inset-0 -z-10"
             style={{
               background:
-                "radial-gradient(circle at center, rgba(37,99,235,0.28) 0%, transparent 62%)",
+                "radial-gradient(circle at center, rgba(33,183,243,0.22) 0%, rgba(139,43,226,0.16) 38%, transparent 64%)",
             }}
           />
           <MouseParallax className="w-full">

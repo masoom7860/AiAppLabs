@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
 
 const variants = {
-  primary: "bg-primary/10 text-primary",
+  primary:
+    "border border-accent/25 bg-gradient-to-r from-accent/15 via-primary/10 to-secondary/15 text-accent shadow-soft",
   secondary: "bg-secondary/10 text-secondary",
   accent: "bg-accent/10 text-accent",
   muted: "bg-muted text-muted-foreground",

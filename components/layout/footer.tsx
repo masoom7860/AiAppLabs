@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/container";
 import { navigation } from "@/data/navigation";
 import { siteConfig } from "@/config/site";
+import { Logo } from "@/components/shared/logo";
 import { GitHub, LinkedIn, XSocial } from "@/components/shared/icons";
 
 const year = new Date().getFullYear();
@@ -18,11 +19,13 @@ export function Footer() {
       <Container className="py-14">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="max-w-sm">
-            <Link href="/" className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-pill bg-gradient-brand text-sm font-bold text-white">
-                AL
+            <Link href="/" className="flex items-center gap-3 rounded-pill bg-white/95 pr-4 shadow-soft ring-1 ring-border/60">
+              <Logo type="logo" />
+              <span className="logo-text" aria-hidden="true">
+                <span>Ai</span>
+                <span>App</span>
+                <span>Labs</span>
               </span>
-              <span className="text-base font-semibold text-foreground">{siteConfig.name}</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               {siteConfig.description}

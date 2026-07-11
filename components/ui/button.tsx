@@ -9,7 +9,7 @@ const base =
   "inline-flex select-none items-center justify-center gap-2 rounded-pill font-semibold transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-60";
 
 const variants = {
-  primary: "bg-primary text-primary-foreground shadow-glow hover:bg-primary-strong",
+  primary: "bg-gradient-brand text-white shadow-glow hover:brightness-110",
   secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-strong",
   accent: "bg-accent text-accent-foreground hover:bg-accent-strong",
   gradient: "bg-gradient-brand text-white shadow-glow hover:brightness-110",

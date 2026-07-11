@@ -32,8 +32,8 @@ export function PricingSection() {
                 {plan.featured ? <Badge variant="primary" size="sm">Popular</Badge> : null}
               </div>
               <p className="mt-3 text-sm text-muted-foreground">{plan.description}</p>
-              <p className="mt-6 text-4xl font-bold tracking-tight text-foreground">
-                {plan.price}
+              <p className="mt-6 text-4xl font-bold tracking-tight">
+                <span className="text-gradient">{plan.price}</span>
                 <span className="text-base font-normal text-muted-foreground"> / scope</span>
               </p>
 

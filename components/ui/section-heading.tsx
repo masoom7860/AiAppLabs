@@ -19,7 +19,7 @@ export function SectionHeading({
   return (
     <div className={cn("max-w-2xl", centered && "mx-auto text-center", className)}>
       <p className={cn("eyebrow", centered && "justify-center")}>{eyebrow}</p>
-      <h2 className="h2 mt-5">{title}</h2>
+      <h2 className="h2 mt-5 text-gradient">{title}</h2>
       {description ? (
         <p className={cn("lead mt-5 max-w-xl", centered && "mx-auto")}>{description}</p>
       ) : null}

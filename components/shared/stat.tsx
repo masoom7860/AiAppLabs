@@ -8,7 +8,7 @@ export function Stat({ value, label, className }: StatProps) {
   return (
     <div className={cn("flex min-w-[7rem] flex-col-reverse gap-1", className)}>
       <dt className="text-sm text-muted-foreground">{label}</dt>
-      <dd className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <dd className="text-gradient font-heading text-3xl font-bold tracking-tight sm:text-4xl">
         {value}
       </dd>
     </div>

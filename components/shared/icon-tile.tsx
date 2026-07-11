@@ -13,7 +13,7 @@ export function IconTile({ children, className }: IconTileProps) {
   return (
     <span
       className={cn(
-        "inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-field bg-primary/10 text-primary transition-all duration-300 group-hover:scale-105 group-hover:bg-gradient-brand group-hover:text-white",
+        "inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-field bg-gradient-brand text-white shadow-glow transition-all duration-300 group-hover:scale-105 group-hover:brightness-110",
         className,
       )}
     >

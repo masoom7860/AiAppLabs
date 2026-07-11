@@ -28,13 +28,13 @@ export function FloatingCard({
       {...props}
     >
       {icon ? (
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-field bg-primary/15 text-primary">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-field bg-gradient-brand text-white shadow-glow">
           {icon}
         </span>
       ) : null}
       <div className="leading-tight">
         <p className="text-xs text-muted-foreground">{label}</p>
-        <p className="text-lg font-bold text-foreground">{value}</p>
+        <p className="text-gradient font-heading text-lg font-bold">{value}</p>
         {trend ? <p className="text-[0.7rem] font-semibold text-success">{trend}</p> : null}
       </div>
     </div>
