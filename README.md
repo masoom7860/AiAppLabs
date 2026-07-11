@@ -1,6 +1,6 @@
 # AiAppLabs
 
-Marketing site for AiAppLabs — an AI product studio. Built with **Next.js 16 (App Router + Turbopack)**, **React 19**, **Tailwind CSS v4**, and **Framer Motion**.
+Marketing site for AiAppLabs, a Laravel, Shopify, JavaScript, cloud, and AI implementation studio. Built with **Next.js 16 (App Router + Turbopack)**, **React 19**, **Tailwind CSS v4**, and **Framer Motion**.
 
 ## Getting started
 
@@ -60,10 +60,14 @@ SEO is centralized in `config/site.ts` and wired through the App Router metadata
 - **Metadata** — `metadataBase`, title template, description, keywords, canonical, and robots directives in `app/layout.tsx`.
 - **Open Graph / Twitter** — a branded image is generated at request/build time by `app/opengraph-image.tsx` (`next/og`); Next injects the `og:image`/`twitter:image` tags automatically.
 - **robots.txt** — `app/robots.ts`, links to the sitemap.
-- **sitemap.xml** — `app/sitemap.ts`, derived from `data/navigation` so it stays in sync as pages are added.
+- **sitemap.xml** — `app/sitemap.ts`, currently listing the single-page home URL.
 - **manifest.webmanifest** — `app/manifest.ts`.
-- **Structured data** — `Organization` + `WebSite` JSON-LD injected in `app/layout.tsx`.
+- **Structured data** — `Organization`, `WebSite`, `WebPage`, service catalog, portfolio list, breadcrumb, and FAQ JSON-LD injected in `app/layout.tsx`.
 
-> Update `config/site.ts` (name, url, description, email, etc.) — every SEO surface reads from it.
->
-> Note: `sitemap.ts` lists the routes declared in `data/navigation` (`/services`, `/about`, `/portfolio`, `/blog`, `/contact`). Those pages are not built yet; add them under `app/(marketing)/` as the next phase so the sitemap entries resolve.
+Set `NEXT_PUBLIC_SITE_URL` for the deployment domain, for example:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://aiapplabs.online
+```
+
+`config/site.ts` also falls back to common platform URL variables such as `SITE_URL`, `APP_URL`, `VERCEL_URL`, `RENDER_EXTERNAL_URL`, and `URL`. Every canonical, sitemap, robots, Open Graph, Twitter, and JSON-LD URL is derived from that normalized site URL.

@@ -11,8 +11,8 @@ export function ServicesSection() {
     <Section id="services" spacing="lg">
       <SectionHeading
         eyebrow="Services"
-        title="Everything you need to build and scale."
-        description="One partner across the full product stack — from intelligent systems to the interfaces and growth engines around them."
+        title="Implementation across web, commerce, cloud, and AI."
+        description="One team for Laravel/PHP, JavaScript frontends, Node.js, databases, cache, security, cloud servers, Shopify apps, and AI workflows."
       />
 
       <RevealGroup
@@ -38,7 +38,7 @@ export function ServicesSection() {
             className="group flex h-full flex-col justify-between rounded-card-lg bg-gradient-brand p-7 text-white shadow-glow transition-transform duration-300 hover:-translate-y-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             <p className="text-lg font-semibold leading-snug">
-              Need something custom?
+              Need a custom stack or app?
             </p>
             <span className="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold">
               Let&rsquo;s talk

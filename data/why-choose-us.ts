@@ -4,32 +4,32 @@ import { Bolt, Cpu, Gauge, ShieldCheck, Sparkles, Target } from "@/components/sh
 export const whyChooseUs: Feature[] = [
   {
     icon: Sparkles,
-    title: "Senior team, end to end",
-    description: "Strategy, design, and applied ML in one accountable team — no handoffs, no juniors learning on your dime.",
+    title: "Full-stack implementation",
+    description: "Laravel, PHP, Node.js, React.js, Vue.js, AngularJS, HTML, CSS, and JavaScript handled as one product stack.",
   },
   {
     icon: Target,
-    title: "Outcome-driven delivery",
-    description: "We commit to measurable product outcomes, not billable hours or disconnected experiments.",
+    title: "Commerce experience",
+    description: "Hands-on Shopify theme setup, custom Shopify apps, and custom ecommerce work like Mechmart.",
   },
   {
     icon: Bolt,
-    title: "Ship in weeks, not quarters",
-    description: "Fast, focused cycles get a production-grade first release live in weeks.",
+    title: "Realtime and background systems",
+    description: "WebSockets, queues, jobs, Supervisor workers, Redis, and Memcached where speed and reliability matter.",
   },
   {
     icon: ShieldCheck,
-    title: "Enterprise-grade by default",
-    description: "Security, evaluations, and reliability built in — SOC 2-ready practices from day one.",
+    title: "Security built into the base",
+    description: "CSRF protection, Argon2 password hashing, encryption, session hardening, and role-aware flows.",
   },
   {
     icon: Cpu,
-    title: "Model-agnostic engineering",
-    description: "We pick the right model and architecture for the job, and keep you portable.",
+    title: "Practical AI features",
+    description: "AI chat, dashboards, sentiment, stock prediction, and stock alerts connected to real business data.",
   },
   {
     icon: Gauge,
-    title: "Built to scale with you",
-    description: "Performance, cost, and quality tuned so your AI compounds instead of stalling.",
+    title: "Cloud deployment support",
+    description: "Linode, AWS, DigitalOcean, and Google Cloud implementation with production-minded operations.",
   },
 ];

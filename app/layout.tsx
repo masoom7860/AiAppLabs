@@ -4,17 +4,22 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/providers/smooth-scroll";
 import { MotionProvider } from "@/components/providers/motion-provider";
-import { siteConfig } from "@/config/site";
+import { absoluteUrl, siteConfig } from "@/config/site";
 import { themeInitScript } from "@/lib/theme";
 import {
   breadcrumbSchema,
   faqSchema,
   graph,
   organizationSchema,
+  portfolioItemListSchema,
+  serviceCatalogSchema,
+  webPageSchema,
   websiteSchema,
 } from "@/lib/schema";
 import { JsonLd } from "@/components/seo/json-ld";
 import { faq } from "@/data/faq";
+import { portfolio } from "@/data/portfolio";
+import { services } from "@/data/services";
 import "./globals.css";
 
 // Body
@@ -32,30 +37,47 @@ const sora = Sora({
   weight: ["500", "600", "700", "800"],
 });
 
+const metadataTitle = `${siteConfig.name} | ${siteConfig.title}`;
+const metadataImage = {
+  url: siteConfig.ogImage,
+  width: 1200,
+  height: 630,
+  alt: siteConfig.ogImageAlt,
+};
+const twitterAccount =
+  siteConfig.twitterHandle.length > 0
+    ? { site: siteConfig.twitterHandle, creator: siteConfig.twitterHandle }
+    : {};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: {
-    default: `${siteConfig.name} | AI Product Studio`,
+    default: metadataTitle,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
+  publisher: siteConfig.name,
+  category: "technology",
+  classification: "Software development services",
   openGraph: {
-    title: `${siteConfig.name} | AI Product Studio`,
+    title: metadataTitle,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
     locale: siteConfig.locale,
     type: "website",
+    images: [metadataImage],
   },
   twitter: {
     card: "summary_large_image",
-    site: siteConfig.twitterHandle,
-    creator: siteConfig.twitterHandle,
-    title: `${siteConfig.name} | AI Product Studio`,
+    title: metadataTitle,
     description: siteConfig.description,
+    images: [absoluteUrl(siteConfig.ogImage)],
+    ...twitterAccount,
   },
   robots: {
     index: true,
@@ -68,7 +90,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "/",
+    canonical: siteConfig.url,
+  },
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
 };
 
@@ -84,6 +111,9 @@ export const viewport: Viewport = {
 const structuredData = graph(
   organizationSchema(),
   websiteSchema(),
+  webPageSchema(),
+  serviceCatalogSchema(services),
+  portfolioItemListSchema(portfolio),
   breadcrumbSchema([{ name: "Home", url: siteConfig.url }]),
   faqSchema(faq),
 );

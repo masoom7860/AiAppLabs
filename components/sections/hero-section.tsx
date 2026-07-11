@@ -26,11 +26,11 @@ export type HeroSectionProps = {
  * parallax — are CSS/lazy/client so they never gate the LCP.
  */
 export function HeroSection({
-  eyebrow = "Enterprise AI platform",
-  titleLead = "Ship AI products that feel as smart as they look.",
-  titleHighlight = "as smart as they look.",
-  description = "AiAppLabs partners with ambitious teams to design, build, and scale production-grade AI products, copilots, and automations — from strategy to launch.",
-  primaryCta = { label: "Book a demo", href: "#contact" },
+  eyebrow = "Laravel, Shopify, JavaScript, cloud, and AI implementation",
+  titleLead = "Build web, commerce, and AI systems that actually ship.",
+  titleHighlight = "actually ship.",
+  description = "AiAppLabs implements Laravel/PHP platforms, Shopify themes and apps, Node.js realtime systems, secure databases, cloud servers, and AI features for chat, dashboards, sentiment, stock prediction, and alerts.",
+  primaryCta = { label: "Book a call", href: "#contact" },
   secondaryCta = { label: "Explore our work", href: "#portfolio" },
 }: HeroSectionProps) {
   const [lead, highlight] = titleLead.includes(titleHighlight)
@@ -87,7 +87,7 @@ export function HeroSection({
           {/* Client logos */}
           <div data-hero className="hero-reveal mt-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              Trusted by teams at
+              Work includes
             </p>
             <ul className="mt-3 flex flex-wrap items-center gap-x-7 gap-y-2">
               {companies.slice(0, 5).map((name) => (

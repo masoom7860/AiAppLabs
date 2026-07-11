@@ -10,7 +10,7 @@ const socials = [
   { label: "AiAppLabs on X", href: siteConfig.links.twitter, Icon: XSocial },
   { label: "AiAppLabs on LinkedIn", href: siteConfig.links.linkedin, Icon: LinkedIn },
   { label: "AiAppLabs on GitHub", href: siteConfig.links.github, Icon: GitHub },
-];
+].filter(({ href }) => href.length > 0);
 
 export function Footer() {
   return (
@@ -46,21 +46,23 @@ export function Footer() {
           <p>
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
-          <ul className="flex items-center gap-2">
-            {socials.map(({ label, href, Icon }) => (
-              <li key={label}>
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer me"
-                  aria-label={label}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-pill border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              </li>
-            ))}
-          </ul>
+          {socials.length > 0 ? (
+            <ul className="flex items-center gap-2">
+              {socials.map(({ label, href, Icon }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                    aria-label={label}
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-pill border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
+                  >
+                    <Icon className="h-4 w-4" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       </Container>
     </footer>

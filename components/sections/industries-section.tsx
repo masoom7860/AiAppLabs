@@ -8,9 +8,9 @@ export function IndustriesSection() {
   return (
     <Section id="industries" tone="muted" spacing="lg">
       <SectionHeading
-        eyebrow="Industries"
-        title="Deep expertise across regulated and high-growth sectors."
-        description="We bring domain context — and the guardrails each industry demands — to every engagement."
+        eyebrow="Use cases"
+        title="Focused on commerce, dashboards, operations, and AI alerts."
+        description="We bring implementation context to Shopify stores, custom ecommerce, service businesses, realtime dashboards, and secure internal tools."
       />
 
       <RevealGroup

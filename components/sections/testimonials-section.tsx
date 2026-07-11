@@ -17,8 +17,8 @@ export function TestimonialsSection() {
     <Section id="testimonials" tone="muted" spacing="lg">
       <SectionHeading
         eyebrow="Testimonials"
-        title="Trusted by product teams that care about quality."
-        description="Collaborators who value clarity, speed, and thoughtful execution."
+        title="Trusted for commerce, backend, and AI implementation."
+        description="Collaborators who needed clean Shopify apps, Laravel foundations, realtime workflows, and maintainable delivery."
       />
 
       <RevealGroup inView stagger={0.12} className="mt-12 grid gap-6 lg:grid-cols-2">

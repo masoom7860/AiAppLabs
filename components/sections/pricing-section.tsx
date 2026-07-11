@@ -12,8 +12,8 @@ export function PricingSection() {
     <Section id="pricing" spacing="lg">
       <SectionHeading
         eyebrow="Pricing"
-        title="Flexible engagements for early-stage and scaling teams."
-        description="Choose a scope that fits your launch timeline, budget, and ambitions."
+        title="Flexible scopes for feature builds and full products."
+        description="Choose a focused implementation sprint or a complete product build across web, Shopify, cloud, and AI."
       />
 
       <RevealGroup inView stagger={0.12} className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -34,7 +34,7 @@ export function PricingSection() {
               <p className="mt-3 text-sm text-muted-foreground">{plan.description}</p>
               <p className="mt-6 text-4xl font-bold tracking-tight text-foreground">
                 {plan.price}
-                <span className="text-base font-normal text-muted-foreground"> / project</span>
+                <span className="text-base font-normal text-muted-foreground"> / scope</span>
               </p>
 
               <ul className="mt-6 space-y-3 text-sm">
@@ -50,7 +50,7 @@ export function PricingSection() {
                 href={plan.href}
                 className={cn("mt-8", plan.featured ? "btn-primary" : "btn-outline")}
               >
-                Book this engagement
+                Start this scope
               </Link>
             </div>
           </RevealItem>

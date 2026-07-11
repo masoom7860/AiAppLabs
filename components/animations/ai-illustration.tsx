@@ -89,8 +89,8 @@ export function AIIllustration({ className }: AIIllustrationProps) {
               <Cpu className="h-5 w-5" />
             </span>
             <div className="leading-tight">
-              <p className="text-xs text-slate-400">Live intelligence layer</p>
-              <p className="text-base font-semibold text-white">Autopilot Console</p>
+              <p className="text-xs text-slate-400">Laravel + Shopify + AI</p>
+              <p className="text-base font-semibold text-white">Ops Dashboard</p>
             </div>
           </div>
           <Badge variant="success" size="sm" className="tracking-normal normal-case">
@@ -102,11 +102,11 @@ export function AIIllustration({ className }: AIIllustrationProps) {
         {/* metrics */}
         <div className="mt-5 grid grid-cols-2 gap-3">
           <div data-gsap="row" className="rounded-field border border-white/10 bg-white/5 p-3">
-            <p className="text-xs text-slate-400">Automation health</p>
+            <p className="text-xs text-slate-400">Queue health</p>
             <p className="mt-1 text-2xl font-bold text-white">98.4%</p>
           </div>
           <div data-gsap="row" className="rounded-field border border-white/10 bg-white/5 p-3">
-            <p className="text-xs text-slate-400">Avg. latency</p>
+            <p className="text-xs text-slate-400">WebSocket latency</p>
             <p className="mt-1 text-2xl font-bold text-white">120ms</p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export function AIIllustration({ className }: AIIllustrationProps) {
         {/* faux chart */}
         <div data-gsap="row" className="mt-5 rounded-field border border-white/10 bg-white/5 p-4">
           <div className="flex items-center justify-between">
-            <p className="text-xs text-slate-400">Throughput (24h)</p>
+            <p className="text-xs text-slate-400">Stock alerts (24h)</p>
             <BarChart className="h-4 w-4 text-accent" />
           </div>
           <div className="mt-3 flex h-24 items-end gap-2">
@@ -134,7 +134,7 @@ export function AIIllustration({ className }: AIIllustrationProps) {
       <FloatingCard
         data-gsap="float"
         icon={<Bolt className="h-5 w-5" />}
-        label="Automation"
+        label="Supervisor jobs"
         value="98.4%"
         trend="+12% this week"
         className="absolute -left-4 top-10 w-44 sm:-left-10"
@@ -142,15 +142,15 @@ export function AIIllustration({ className }: AIIllustrationProps) {
       <FloatingCard
         data-gsap="float"
         icon={<BarChart className="h-5 w-5" />}
-        label="Response quality"
+        label="Sentiment signal"
         value="+37%"
         className="absolute -right-3 bottom-12 w-44 sm:-right-8"
       />
       <FloatingCard
         data-gsap="float"
         icon={<ShieldCheck className="h-5 w-5" />}
-        label="Compliance"
-        value="SOC 2"
+        label="Security"
+        value="Argon2"
         className="absolute -right-2 top-2 hidden w-40 sm:flex"
       />
     </div>

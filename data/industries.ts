@@ -11,32 +11,32 @@ import {
 export const industries: Feature[] = [
   {
     icon: TrendingUp,
-    title: "Fintech",
-    description: "Risk, fraud, and underwriting AI built for regulated environments.",
-  },
-  {
-    icon: Heart,
-    title: "Healthcare",
-    description: "Clinical copilots and document automation with privacy by design.",
+    title: "Stock & Market Tools",
+    description: "AI dashboards, sentiment analysis, stock prediction, and stock alert workflows for data-heavy products.",
   },
   {
     icon: ShoppingCart,
-    title: "E-commerce",
-    description: "Personalization, search, and support that lift conversion and LTV.",
-  },
-  {
-    icon: Building,
-    title: "Enterprise SaaS",
-    description: "AI-native features and copilots embedded into your product.",
+    title: "Shopify Commerce",
+    description: "Theme setup and custom apps for inventory, banners, checkout notices, gift cards, BOGO, and call for price.",
   },
   {
     icon: Truck,
-    title: "Logistics",
-    description: "Forecasting, routing, and operations intelligence at scale.",
+    title: "Custom Ecommerce",
+    description: "Laravel commerce platforms like Mechmart with catalog, checkout, orders, cache, and server deployment.",
+  },
+  {
+    icon: Building,
+    title: "Business Dashboards",
+    description: "React, Vue, AngularJS, and Node.js dashboards connected to MySQL, MongoDB, Redis, and AI insights.",
+  },
+  {
+    icon: Heart,
+    title: "Service Businesses",
+    description: "Operational websites and inquiry flows for service brands, including projects like Anil Caterers.",
   },
   {
     icon: GraduationCap,
-    title: "Education",
-    description: "Adaptive tutoring and content generation that scales learning.",
+    title: "Internal Tools",
+    description: "Secure admin portals with CSRF protection, Argon2 hashing, encryption, jobs, Supervisor, and permissions.",
   },
 ];

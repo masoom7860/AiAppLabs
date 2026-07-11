@@ -10,8 +10,8 @@ export function CaseStudiesSection() {
     <Section id="case-studies" tone="muted" spacing="lg">
       <SectionHeading
         eyebrow="Case studies"
-        title="Outcomes we're proud of."
-        description="A closer look at how we turn AI ambition into measurable business results."
+        title="How the implementation pieces fit together."
+        description="Examples that combine Laravel, Shopify, JavaScript, databases, queues, security, cloud servers, and AI workflows."
       />
 
       <RevealGroup inView stagger={0.12} className="mt-12 space-y-6">
@@ -32,7 +32,7 @@ export function CaseStudiesSection() {
                 </h3>
                 <p className="mt-3 text-muted-foreground">{study.summary}</p>
                 <CardLink href={study.href} srText={study.title} className="mt-6">
-                  Read the case study
+                  Discuss similar work
                 </CardLink>
               </div>
 

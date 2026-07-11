@@ -11,105 +11,104 @@ import {
 
 export const aboutStory = {
   eyebrow: "About AiAppLabs",
-  title: "We turn AI ambition into products people trust.",
+  title: "We build practical web, commerce, cloud, and AI systems.",
   paragraphs: [
-    "AiAppLabs began with a simple frustration: most AI projects stall in the gap between an impressive demo and a product teams can actually rely on. We set out to close that gap.",
-    "Today we work as an embedded partner — pairing strategy, design, and engineering — so ambitious teams can design, ship, and scale AI-native products with confidence, from first prototype to production.",
+    "AiAppLabs works across the real implementation layer: Laravel, PHP, HTML, CSS, JavaScript, Node.js, React.js, Vue.js, AngularJS, databases, cache, workers, and cloud servers.",
+    "Our work spans Shopify theme setup and apps, custom ecommerce platforms like Mechmart, service projects like Anil Caterers, and AI implementations for chat, dashboards, sentiment, stock prediction, and stock alerts.",
   ],
 };
 
 export const counters: Counter[] = [
-  { value: 30, suffix: "+", label: "AI products shipped" },
-  { value: 94, suffix: "%", label: "Avg. retention uplift" },
+  { value: 10, suffix: "+", label: "Shopify app workflows" },
+  { value: 5, suffix: "+", label: "Core stack areas covered" },
   { value: 4.9, decimals: 1, suffix: "/5", label: "Client satisfaction" },
-  { value: 12, suffix: "+", label: "Industries served" },
+  { value: 4, suffix: "+", label: "Cloud platforms supported" },
 ];
 
 export const mission: Feature = {
   icon: Target,
   title: "Our mission",
   description:
-    "To help ambitious teams turn AI potential into production-grade products that earn user trust and compound in value over time.",
+    "To help teams ship dependable Laravel, Shopify, JavaScript, cloud, and AI products that solve real operational problems.",
 };
 
 export const vision: Feature = {
   icon: Eye,
   title: "Our vision",
   description:
-    "A world where every team can design, build, and scale AI-native experiences with the same confidence as any mature software product.",
+    "A product studio where ecommerce, dashboards, realtime systems, secure backends, and AI features come together cleanly.",
 };
 
 export const values: Feature[] = [
   {
     icon: Sparkles,
-    title: "Outcomes over output",
-    description: "We measure success by the product results we create — not the features we ship.",
+    title: "Implementation over buzzwords",
+    description: "We focus on working modules, reliable jobs, usable dashboards, and maintainable code.",
   },
   {
     icon: ShieldCheck,
-    title: "Trust by design",
-    description: "Security, evaluation, and reliability are built in from day one, never bolted on.",
+    title: "Secure by default",
+    description: "CSRF protection, Argon2 hashing, encryption, and permission-aware flows are part of the foundation.",
   },
   {
     icon: Bolt,
-    title: "Bias for momentum",
-    description: "We move in fast, focused cycles that compound into real, measurable progress.",
+    title: "Fast feedback cycles",
+    description: "We ship usable releases for Laravel apps, Shopify apps, dashboards, and AI features in focused increments.",
   },
   {
     icon: Cpu,
-    title: "Craft at the core",
-    description: "Engineering and design rigor in everything, from prompts and pipelines to pixels.",
+    title: "Right tool for the job",
+    description: "PHP, Node.js, MySQL, SQLite, MongoDB, Redis, Memcached, and cloud services are selected around the workload.",
   },
   {
     icon: BarChart,
-    title: "Evidence over opinion",
-    description: "Decisions are grounded in usage signals, evaluations, and honest measurement.",
+    title: "Data-backed AI",
+    description: "AI chat, sentiment, prediction, and alerts are grounded in application data and dashboard feedback.",
   },
   {
     icon: Target,
-    title: "Partner, not vendor",
-    description: "We act as an extension of your team and stay accountable to the same goals.",
+    title: "Commerce context",
+    description: "We understand Shopify apps, custom ecommerce, order workflows, promotions, and admin operations.",
   },
 ];
 
 export const timeline: Milestone[] = [
   {
     year: "2021",
-    title: "Founded",
-    description: "AiAppLabs starts as a two-person studio betting that AI products live or die on craft.",
+    title: "Laravel and PHP roots",
+    description: "AiAppLabs starts by building practical PHP, Laravel, HTML, CSS, and JavaScript web systems.",
   },
   {
     year: "2022",
-    title: "First enterprise launch",
-    description: "Shipped our first production copilot, cutting a partner's support escalations by 41%.",
+    title: "Commerce projects",
+    description: "Expanded into Shopify theme setup, custom Shopify apps, and ecommerce workflows.",
   },
   {
     year: "2023",
-    title: "A full-stack team",
-    description: "Grew into a multidisciplinary team across strategy, product design, and applied ML.",
+    title: "Realtime and cloud",
+    description: "Added Node.js, WebSockets, jobs, Supervisor workers, Redis, Memcached, and cloud deployment support.",
   },
   {
     year: "2024",
-    title: "Automation accelerator",
-    description: "Launched our internal accelerator to take AI workflows from idea to launch in weeks.",
+    title: "AI implementation",
+    description: "Built AI chat, dashboards, sentiment analysis, stock prediction, and stock alert workflows.",
   },
   {
     year: "2025",
-    title: "Global footprint",
-    description: "Partnered with teams across 12+ industries to ship AI-native experiences worldwide.",
+    title: "Named products",
+    description: "Delivered Shopify apps including SocialFeedAI, low inventory management, and conversion tools.",
   },
   {
     year: "2026",
     title: "Today",
-    description: "Building the next generation of AI products with the teams defining their categories.",
+    description: "Building across Mechmart-style custom ecommerce, Shopify apps, secure backends, and AI dashboards.",
   },
 ];
 
-// NOTE: placeholder leadership details — replace with the real founder/CEO.
 export const ceoMessage = {
   quote:
-    "We started AiAppLabs because the hardest part of AI isn't the model — it's turning it into something people trust and use every day. Our job is to close that distance, pairing strategy, design, and engineering so your team can ship AI that actually ships.",
-  name: "Sara Whitman",
-  role: "Founder & CEO",
-  initials: "SW",
+    "The strongest products usually come from getting the fundamentals right: secure Laravel foundations, clear JavaScript interfaces, reliable jobs, stable servers, and AI that is connected to the actual business workflow.",
+  name: "AiAppLabs Team",
+  role: "Full-stack AI and commerce studio",
+  initials: "AL",
 };

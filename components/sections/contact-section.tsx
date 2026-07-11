@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Section } from "@/components/layout/section";
 import { siteConfig } from "@/config/site";
 
+const phoneHref = siteConfig.phone.replace(/[^+\d]/g, "");
+
 export function ContactSection() {
   return (
     <Section id="contact" spacing="lg">
@@ -14,11 +16,11 @@ export function ContactSection() {
           <div>
             <p className="eyebrow">Contact</p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              Let&rsquo;s turn your AI idea into a product people love.
+              Let&rsquo;s scope your Laravel, Shopify, cloud, or AI implementation.
             </h2>
             <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-              Tell us what you&rsquo;re building and the constraints you&rsquo;re solving against —
-              we&rsquo;ll scope the right next steps with you.
+              Tell us what you&rsquo;re building: a Shopify app, Mechmart-style ecommerce platform,
+              AI dashboard, stock alert flow, or secure Laravel backend.
             </p>
           </div>
 
@@ -30,14 +32,16 @@ export function ContactSection() {
             >
               {siteConfig.email}
             </a>
-            <a
-              href={`tel:${siteConfig.phone.replace(/[^+\d]/g, "")}`}
-              className="mt-1 block text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {siteConfig.phone}
-            </a>
+            {siteConfig.phone && phoneHref ? (
+              <a
+                href={`tel:${phoneHref}`}
+                className="mt-1 block text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {siteConfig.phone}
+              </a>
+            ) : null}
             <Link href={`mailto:${siteConfig.email}`} className="btn-primary mt-6 w-full">
-              Book a discovery call
+              Start a project scope
             </Link>
           </div>
         </div>

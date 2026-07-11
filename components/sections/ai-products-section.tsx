@@ -8,9 +8,9 @@ export function AIProductsSection() {
   return (
     <Section id="products" spacing="lg">
       <SectionHeading
-        eyebrow="AI Products"
-        title="Production-ready building blocks for AI products."
-        description="Accelerators we've battle-tested across engagements — adapted to your domain, not bolted on."
+        eyebrow="AI & Shopify Products"
+        title="Reusable patterns for chat, dashboards, stock alerts, and Shopify apps."
+        description="Practical building blocks adapted to your Laravel, Node.js, Shopify, or custom ecommerce product."
       />
 
       <RevealGroup

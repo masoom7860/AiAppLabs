@@ -8,8 +8,8 @@ export function TechStackSection() {
     <Section id="tech" spacing="lg">
       <SectionHeading
         eyebrow="Technology"
-        title="A modern, model-agnostic stack."
-        description="We pick the right tools for the job and keep you portable — no lock-in, no compromise on quality."
+        title="The stack we use for real implementation work."
+        description="Laravel, PHP, JavaScript frameworks, Node.js, SQL and NoSQL data stores, cache, security, Shopify, AI, and cloud deployment."
       />
 
       <RevealGroup

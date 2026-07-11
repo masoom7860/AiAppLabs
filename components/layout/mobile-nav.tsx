@@ -113,7 +113,7 @@ function MobileNavItem({
             <div className="ml-3 flex flex-col gap-0.5 border-l border-border pl-3 pt-1">
               {item.children.map((child) => (
                 <Link
-                  key={child.href}
+                  key={`${child.label}-${child.href}`}
                   href={child.href}
                   onClick={onNavigate}
                   className="rounded-field px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"

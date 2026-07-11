@@ -2,17 +2,17 @@ import type { PricingPlan } from "@/types/content";
 
 export const pricing: PricingPlan[] = [
   {
-    name: "Launch",
-    price: "$8k",
-    description: "Best for early-stage AI experiments and MVPs.",
-    features: ["Discovery sprint", "Core experience", "Analytics setup"],
+    name: "Implementation Sprint",
+    price: "Custom",
+    description: "Best for a focused Laravel, Shopify, AI, or dashboard feature.",
+    features: ["Scope and architecture", "Core module build", "Deployment handoff"],
     href: "#contact",
   },
   {
-    name: "Scale",
-    price: "$24k",
-    description: "For companies building serious AI products with real usage.",
-    features: ["Advanced workflows", "Integrations", "Performance tuning"],
+    name: "Product Build",
+    price: "Custom",
+    description: "For full products such as Shopify apps, Mechmart-style ecommerce, or AI dashboards.",
+    features: ["Frontend and backend", "Jobs, cache, and security", "Cloud launch support"],
     featured: true,
     href: "#contact",
   },

@@ -13,38 +13,38 @@ export type Product = {
 export const products: Product[] = [
   {
     icon: MessageSquare,
-    name: "Copilot Studio",
-    tagline: "Conversational AI",
+    name: "AI Chat & Support Hub",
+    tagline: "AI chat",
     description:
-      "Build domain-aware copilots with retrieval, tools, and guardrails — production-ready in weeks.",
-    features: ["RAG + tool use", "Evaluation suite", "Streaming UI"],
-    href: "#contact",
-  },
-  {
-    icon: Bolt,
-    name: "AutoPilot Engine",
-    tagline: "Automation",
-    description:
-      "Orchestrate multi-step agentic workflows that act across your stack with human-in-the-loop control.",
-    features: ["Agent orchestration", "100+ integrations", "Audit trails"],
+      "Add AI chat to Laravel, Shopify, or custom dashboards with data-aware answers, escalation paths, and conversation history.",
+    features: ["Laravel or Node.js APIs", "Streaming UI", "Admin review tools"],
     href: "#contact",
   },
   {
     icon: BarChart,
-    name: "Insight Analytics",
-    tagline: "Intelligence",
+    name: "Dashboard Intelligence",
+    tagline: "Analytics",
     description:
-      "Turn product and model telemetry into decisions with real-time dashboards and anomaly alerts.",
-    features: ["Live dashboards", "Anomaly detection", "Cost tracking"],
+      "Turn sales, inventory, sentiment, and operational data into practical dashboards with alerts and decision support.",
+    features: ["Role-based dashboards", "Sentiment views", "Redis-backed speed"],
     href: "#contact",
   },
   {
     icon: Eye,
-    name: "Vision Suite",
-    tagline: "Multimodal",
+    name: "Stock Prediction & Alerts",
+    tagline: "Forecasting",
     description:
-      "Extract structure from documents, images, and video with accuracy your team can trust.",
-    features: ["Document AI", "Image understanding", "OCR + layout"],
+      "Forecast demand, detect inventory risk, and notify teams before stockouts or price-sensitive moments hurt revenue.",
+    features: ["Prediction models", "Stock alerts", "Queue-based jobs"],
+    href: "#contact",
+  },
+  {
+    icon: Bolt,
+    name: "Shopify App Suite",
+    tagline: "Commerce",
+    description:
+      "Reusable patterns for Shopify apps including SocialFeedAI, low inventory management, checkout notices, forms, BOGO, and call for price.",
+    features: ["Theme setup", "Admin embedded apps", "Order and gift card tools"],
     href: "#contact",
   },
 ];

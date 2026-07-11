@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/config/site";
 
-export const alt = `${siteConfig.name} | AI Product Studio`;
+export const alt = siteConfig.ogImageAlt;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -57,6 +57,23 @@ export default function OpengraphImage() {
           </div>
           <div style={{ fontSize: "30px", color: "#94a3b8", maxWidth: "820px" }}>
             {siteConfig.description}
+          </div>
+          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
+            {["Laravel/PHP", "Shopify Apps", "AI Dashboards", "Cloud Servers"].map((item) => (
+              <div
+                key={item}
+                style={{
+                  border: "1px solid rgba(103,232,249,0.35)",
+                  borderRadius: "999px",
+                  padding: "10px 18px",
+                  color: "#e0f2fe",
+                  fontSize: "22px",
+                  fontWeight: 600,
+                }}
+              >
+                {item}
+              </div>
+            ))}
           </div>
         </div>
 

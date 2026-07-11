@@ -1,8 +1,8 @@
 export const trustedBy: string[] = [
-  "Northstar",
-  "FlowForge",
-  "Nimbus AI",
-  "Vantage",
-  "Helio Labs",
-  "Quanta",
+  "SocialFeedAI",
+  "Low Inventory Manage",
+  "Mechmart",
+  "Anil Caterers",
+  "Order Import",
+  "Call for Price",
 ];

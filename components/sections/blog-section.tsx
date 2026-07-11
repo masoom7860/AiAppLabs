@@ -10,8 +10,8 @@ export function BlogSection() {
     <Section id="blog" spacing="lg">
       <SectionHeading
         eyebrow="Blog"
-        title="Notes on building AI products that last."
-        description="Practical perspectives on product strategy, automation, and design systems."
+        title="Notes on Laravel, Shopify, realtime systems, and AI dashboards."
+        description="Practical perspectives on implementation, app architecture, worker queues, cache, and AI alert workflows."
       />
 
       <RevealGroup inView stagger={0.12} className="mt-12 grid gap-6 lg:grid-cols-2">

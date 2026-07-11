@@ -10,8 +10,8 @@ export function FaqSection() {
     <Section id="faq" tone="muted" spacing="lg">
       <SectionHeading
         eyebrow="FAQ"
-        title="Questions we hear often."
-        description="A quick view into how we approach engagements and outcomes."
+        title="Questions about the stack and project types."
+        description="A quick view into the technologies, Shopify apps, cloud deployment, and AI implementation work we handle."
       />
 
       <div className="mx-auto mt-12 max-w-3xl space-y-4">

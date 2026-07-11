@@ -9,8 +9,8 @@ export function WhyChooseUsSection() {
     <Section id="why" spacing="lg">
       <SectionHeading
         eyebrow="Why AiAppLabs"
-        title="The partner teams trust to ship real AI."
-        description="Most AI projects stall between a demo and a product. We're built to close that gap."
+        title="A practical build partner for full-stack product work."
+        description="We connect backend, frontend, cloud, data, security, Shopify, and AI implementation into one delivery flow."
       />
 
       <RevealGroup

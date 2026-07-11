@@ -11,32 +11,32 @@ export type ProcessStep = {
 export const process: ProcessStep[] = [
   {
     step: "01",
-    title: "Discover",
-    description: "We align on goals, constraints, and the highest-leverage AI opportunity.",
+    title: "Map the product",
+    description: "We define the Laravel, Shopify, AI, or dashboard workflow and identify the data, roles, and integrations.",
     icon: Search,
   },
   {
     step: "02",
-    title: "Design",
-    description: "We shape the experience, data flows, and architecture before a line of code.",
+    title: "Plan the stack",
+    description: "We choose the right mix of PHP, Node.js, JavaScript frameworks, databases, cache, WebSockets, and cloud servers.",
     icon: Layout,
   },
   {
     step: "03",
-    title: "Build",
-    description: "We ship in focused cycles with evaluations and quality gates throughout.",
+    title: "Build the modules",
+    description: "We implement apps, themes, APIs, dashboards, jobs, Shopify flows, and AI features in focused releases.",
     icon: Code,
   },
   {
     step: "04",
-    title: "Launch",
-    description: "We harden, instrument, and roll out to production with confidence.",
+    title: "Harden and launch",
+    description: "We add CSRF protection, Argon2 hashing, encryption, worker supervision, monitoring, and deployment steps.",
     icon: Rocket,
   },
   {
     step: "05",
     title: "Scale",
-    description: "We tune performance, cost, and quality so adoption keeps compounding.",
+    description: "We tune MySQL, MongoDB, Redis, Memcached, server capacity, queue throughput, and alert reliability.",
     icon: Gauge,
   },
 ];

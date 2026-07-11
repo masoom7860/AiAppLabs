@@ -8,8 +8,8 @@ export function PortfolioSection() {
     <Section id="portfolio" spacing="lg">
       <SectionHeading
         eyebrow="Portfolio"
-        title="Award-winning work, measurable outcomes."
-        description="A selection of AI products and systems we've designed, built, and scaled for modern teams."
+        title="Relevant apps, ecommerce builds, and AI dashboards."
+        description="A selection of Shopify apps, custom ecommerce platforms, service projects, and AI implementations aligned to the work you listed."
       />
 
       {/* Responsive masonry (CSS columns). Cards self-reveal (Framer); their

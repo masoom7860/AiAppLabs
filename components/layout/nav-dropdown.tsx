@@ -66,7 +66,7 @@ export function NavDropdown({ item, active }: NavDropdownProps) {
             <div className="glass rounded-card p-2 shadow-elevated">
               {item.children.map((child) => (
                 <Link
-                  key={child.href}
+                  key={`${child.label}-${child.href}`}
                   href={child.href}
                   role="menuitem"
                   className="group block rounded-field px-3 py-2.5 transition-colors hover:bg-muted"

@@ -9,8 +9,8 @@ export function ProcessSection() {
       <div className="container-page py-section-sm sm:py-section lg:pb-0">
         <SectionHeading
           eyebrow="Process"
-          title="A clear path from idea to impact."
-          description="A focused, transparent way of working that turns ambition into shipped product — scroll through it."
+          title="A clear path from scope to secure production."
+          description="A focused delivery flow for Laravel, Shopify, Node.js, databases, jobs, cloud deployment, and AI features."
         />
       </div>
 

@@ -70,7 +70,7 @@ export function AboutSection() {
       <div className="mt-20">
         <SectionHeading
           eyebrow="Our values"
-          title="The principles behind every engagement."
+          title="The principles behind every Laravel, Shopify, cloud, and AI build."
         />
         <RevealGroup
           inView
@@ -92,7 +92,7 @@ export function AboutSection() {
       {/* Timeline + CEO message */}
       <div className="mt-20 grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
         <div>
-          <SectionHeading eyebrow="Our journey" title="From two people to a product partner." />
+          <SectionHeading eyebrow="Our journey" title="From PHP roots to commerce and AI implementation." />
           <Timeline items={timeline} className="mt-10" />
         </div>
         <CeoMessage
