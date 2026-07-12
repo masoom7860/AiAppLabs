@@ -26,7 +26,7 @@ export type HeroSectionProps = {
  * parallax — are CSS/lazy/client so they never gate the LCP.
  */
 export function HeroSection({
-  eyebrow = "Laravel, Shopify, JavaScript, cloud, and AI implementation",
+  eyebrow = "Laravel, Shopify, JavaScript, Cloud and AI implementation",
   titleLead = "Build web, commerce, and AI systems that actually ship.",
   titleHighlight = "actually ship.",
   description = "AiAppLabs implements Laravel/PHP platforms, Shopify themes and apps, Node.js realtime systems, secure databases, cloud servers, and AI features for chat, dashboards, sentiment, stock prediction, and alerts.",
@@ -57,7 +57,7 @@ export function HeroSection({
           <h1
             id="hero-heading"
             data-hero
-            className="hero-reveal mt-6 text-balance text-5xl font-bold leading-[1.02] tracking-tight text-foreground sm:text-6xl lg:text-7xl xl:text-[5.25rem]"
+            className="hero-reveal mt-6 text-balance text-5xl font-bold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-[5.25rem]"
           >
             {lead}
             {highlight ? <span className="text-gradient">{highlight}</span> : null}
@@ -65,7 +65,7 @@ export function HeroSection({
 
           <p
             data-hero
-            className="hero-reveal mt-6 max-w-xl text-lg leading-8 text-muted-foreground sm:text-xl"
+            className="hero-reveal mt-6 max-w-xl text-lg leading-8 text-slate-300 sm:text-xl"
           >
             {description}
           </p>
@@ -80,20 +80,20 @@ export function HeroSection({
             </Link>
           </div>
 
-          <div data-hero className="hero-reveal mt-12 border-t border-border pt-8">
-            <StatGrid items={stats} />
+          <div data-hero className="hero-reveal mt-12 border-t border-white/10 pt-8">
+            <StatGrid items={stats} className="[&_dt]:text-slate-300" />
           </div>
 
           {/* Client logos */}
           <div data-hero className="hero-reveal mt-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
               Work includes
             </p>
             <ul className="mt-3 flex flex-wrap items-center gap-x-7 gap-y-2">
               {companies.slice(0, 5).map((name) => (
                 <li
                   key={name}
-                  className="text-sm font-semibold tracking-tight text-muted-foreground/70 transition-colors hover:text-foreground"
+                  className="text-sm font-semibold tracking-tight text-slate-400 transition-colors hover:text-white"
                 >
                   {name}
                 </li>

@@ -31,7 +31,7 @@ function resolveSiteUrl() {
 
   return normalizeSiteUrl(
     configuredUrl ||
-      (process.env.NODE_ENV === "production" ? DEFAULT_PRODUCTION_URL : DEFAULT_DEVELOPMENT_URL),
+    (process.env.NODE_ENV === "production" ? DEFAULT_PRODUCTION_URL : DEFAULT_DEVELOPMENT_URL),
   );
 }
 
@@ -69,7 +69,7 @@ export const siteConfig = {
     "stock alert",
     "custom ecommerce platform",
   ],
-  email: "tarannum0072003@gmail.com",
+  email: "aiapplabs0072003@gmail.com",
   phone: "",
   address: "Remote-first, worldwide",
   twitterHandle: "",

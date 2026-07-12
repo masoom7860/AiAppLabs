@@ -25,7 +25,7 @@ export const navigation: NavItem[] = [
   },
   { label: "Stack", href: "#tech" },
   { label: "Work", href: "#portfolio" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Blog", href: "#blog" },
+  // { label: "Pricing", href: "#pricing" },
+  // { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];

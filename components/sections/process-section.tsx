@@ -6,7 +6,7 @@ import { process } from "@/data/process";
 export function ProcessSection() {
   return (
     <section id="process" className="relative scroll-mt-20 bg-muted text-foreground">
-      <div className="container-page py-section-sm sm:py-section lg:pb-0">
+      <div className="container-page pt-section-sm sm:pt-section pb-6">
         <SectionHeading
           eyebrow="Process"
           title="A clear path from scope to secure production."
@@ -15,7 +15,7 @@ export function ProcessSection() {
       </div>
 
       <HorizontalScroll
-        className="px-6 pb-section-sm sm:pb-section lg:px-0 lg:pb-0"
+        className="-mt-2 px-6 pb-section-sm sm:pb-section lg:px-0 lg:pb-0"
         trackClassName="lg:px-[10vw]"
       >
         {process.map(({ step, title, description, icon: Icon }) => (

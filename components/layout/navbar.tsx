@@ -52,13 +52,13 @@ export function Navbar({
     >
       <div className="container-page flex h-16 items-center justify-between gap-4">
         {/* Logo */}
-        <div className="flex items-center rounded-pill bg-white/95 pr-4 shadow-soft ring-1 ring-border/60">
+        <div className="flex items-center rounded-pill bg-white/95 pr-5 shadow-soft ring-1 ring-border/60">
           <Link
             href={logo.href ?? "/"}
             onClick={() => setOpen(false)}
             className="flex items-center gap-3 rounded-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
-            <Logo type="logo" imageClassName="h-10 sm:h-11" />
+            <Logo type="logo" imageClassName="h-8 sm:h-9" />
             <span className="logo-text" aria-hidden="true">
               <span>Ai</span>
               <span>App</span>

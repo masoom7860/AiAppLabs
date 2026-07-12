@@ -19,7 +19,7 @@ export function Footer() {
       <Container className="py-14">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="max-w-sm">
-            <Link href="/" className="flex items-center gap-3 rounded-pill bg-white/95 pr-4 shadow-soft ring-1 ring-border/60">
+            <Link href="/" className="inline-flex items-center rounded-pill bg-white/95 px-2 py-1 shadow-soft ring-1 ring-border/60">
               <Logo type="logo" />
               <span className="logo-text" aria-hidden="true">
                 <span>Ai</span>
